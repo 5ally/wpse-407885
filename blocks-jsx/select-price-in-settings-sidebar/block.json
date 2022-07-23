@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "wpse-407885/select-price-in-settings-sidebar",
+	"title": "WPSE 407885: Price dropdown in settings sidebar",
+	"textdomain": "wpse-407885",
+	"attributes": {
+		"price": {
+			"type": "number",
+			"default": 0.00
+		}
+	},
+	"icon": "money-alt",
+	"category": "text",
+	"example": {},
+	"editorScript": "file:./index.js"
+}
