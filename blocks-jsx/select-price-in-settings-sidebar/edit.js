@@ -1,9 +1,18 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
-import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, SelectControl } from '@wordpress/components';
+import {
+	__,
+	sprintf,
+} from '@wordpress/i18n';
+import {
+	useBlockProps,
+	InspectorControls,
+} from '@wordpress/block-editor';
+import {
+	PanelBody,
+	SelectControl,
+} from '@wordpress/components';
 
 /**
  * Internal dependencies
@@ -41,7 +50,7 @@ const Edit = ( { attributes, setAttributes } ) => {
 						}, ...prices ] }
 						onChange={ setNewPrice }
 						value={ attributes.price }
-						hideLabelFromVision={ true }
+						hideLabelFromVision
 						__nextHasNoMarginBottom
 					/>
 				</PanelBody>

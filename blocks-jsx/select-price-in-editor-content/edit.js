@@ -1,7 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { __, sprintf } from '@wordpress/i18n';
+import {
+	__,
+	sprintf,
+} from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 import { SelectControl } from '@wordpress/components';
 
@@ -39,7 +42,7 @@ const Edit = ( { attributes, setAttributes } ) => {
 				}, ...prices ] }
 				onChange={ setNewPrice }
 				value={ attributes.price }
-				hideLabelFromVision={ true }
+				hideLabelFromVision
 				__nextHasNoMarginBottom
 			/>
 
