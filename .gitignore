@@ -20,3 +20,5 @@ blocks-jsx.ori/
 blocks-non-jsx.ori/
 package-lock.json
 composer.lock
+.md
+languages
