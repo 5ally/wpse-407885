@@ -1,5 +1,5 @@
 {
-	"name": "wordpress/wpse-407885",
+	"name": "wpse-407885",
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
 		"squizlabs/php_codesniffer": "^3.6",
