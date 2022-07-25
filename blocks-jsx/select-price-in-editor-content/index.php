@@ -4,6 +4,7 @@
  * Plugin URI: https://github.com/5ally/wpse-407885
  * Version: 1.0.0
  * Author: Sally CJ
+ * Text Domain: wpse-407885
  *
  * @package wpse-407885
  */
@@ -29,7 +30,8 @@ function wpse_407885_spiec_register_block() {
 	// Register the block by passing the location of block.json to register_block_type.
 	register_block_type( __DIR__ );
 
-	wp_set_script_translations( 'wpse-407885-select-price-in-editor-content-editor-script', 'wpse-407885' );
+	wp_set_script_translations( 'wpse-407885-select-price-in-editor-content-editor-script',
+		'wpse-407885', __DIR__ . '/languages' );
 
 }
 add_action( 'init', 'wpse_407885_spiec_register_block' );
