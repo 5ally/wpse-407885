@@ -30,8 +30,10 @@ function wpse_407885_spiec_register_block() {
 	// Register the block by passing the location of block.json to register_block_type.
 	register_block_type( __DIR__ );
 
+	// If not installed as a standalone plugin, load translations from the parent plugin.
+	$lang_root = defined( 'WPSE_407885_PLUGIN_DIR' ) ? WPSE_407885_PLUGIN_DIR : __DIR__;
 	wp_set_script_translations( 'wpse-407885-select-price-in-editor-content-editor-script',
-		'wpse-407885', __DIR__ . '/languages' );
+		'wpse-407885', $lang_root . '/languages' );
 
 }
 add_action( 'init', 'wpse_407885_spiec_register_block' );
