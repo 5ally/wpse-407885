@@ -22,3 +22,11 @@ foreach ( array(
 	require WPSE_407885_PLUGIN_DIR . "build/blocks-jsx/$block/index.php";
 //	require WPSE_407885_PLUGIN_DIR . "blocks-non-jsx/$block/index.php";
 }
+
+/**
+ * Load translations for our plugin from the MO file.
+ */
+function wpse_407885_load_textdomain() {
+	load_plugin_textdomain( 'wpse-407885', false, basename( __DIR__ ) . '/languages' );
+}
+add_action( 'init', 'wpse_407885_load_textdomain' );
